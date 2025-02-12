@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 }, false);
 
-let socket = new WebSocket("ws://localhost:9090");
+let socket = new WebSocket("ws://10.0.0.194:9090");
 let isConnected = false;
 
 socket.onopen = () => {
