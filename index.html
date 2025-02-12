@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poultry Party</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 0. This is where the roomCodeQuery would go -->
+
+    <!-- 1. Show only this -->
+    <section id="nameQuery">
+        <input type="text" id="message" placeholder="Enter a message">
+        <button id="sendButton" onclick="sendPlayer()">Send</button>
+    </section>
+
+    <!-- 2. Show only this -->
+    <section id="imageButtonList">
+        <button class="imageButton" onclick="setPlayerImage('textures/players/Tst1.png', 'Tst1.png')">1</button>
+        <button class="imageButton" onclick="setPlayerImage('textures/players/Tst2.png', 'Tst2.png')">2</button>
+        <button class="imageButton" onclick="setPlayerImage('textures/players/Tst3.png', 'Tst3.png')">3</button>
+        <button class="imageButton" onclick="setPlayerImage('textures/players/Tst4.png', 'Tst4.png')">4</button>
+        <button class="imageButton" onclick="setPlayerImage('textures/players/Tst5.png', 'Tst5.png')">5</button>
+        <button class="imageButton" onclick="setPlayerImage('textures/players/Tst6.png', 'Tst6.png')">6</button>
+    </section>
+
+    <!-- 3. Show all below that needs to be shown -->
+    <img id="playerImage" />
+
+    <section id="roleItems">
+        <p id="role">No Role</p>
+        <p id="roleInfo">No Role Info</p>
+    </section>
+
+    <section id="roleButtonList">
+        <button class="roleButton" onclick="storeCalloutRole('Joke Thief')">Joke Thief</button>
+        <button class="roleButton" onclick="storeCalloutRole('Quiet Kid')">Quiet Kid</button>
+        <button class="roleButton" onclick="storeCalloutRole('Know it All')">Know it All</button>
+        <button class="roleButton" onclick="storeCalloutRole('Sheeple')">Sheeple</button>
+        <button class="roleButton" onclick="storeCalloutRole('Gaslighter')">Gaslighter</button>
+        <button class="roleButton" onclick="storeCalloutRole('Chatterbox')">Chatterbox</button>
+        <button class="roleButton" onclick="storeCalloutRole('Comedian')">Comedian</button>
+        <button class="roleButton" onclick="storeCalloutRole('Philosopher')">Philosopher</button>
+        <button class="roleButton" onclick="storeCalloutRole('Snowflake')">Snowflake</button>
+    </section>
+
+    <!-- 4. Always show this -->
+    <p id="status">Not Connected</p>
+
+    <!-- 5. Show this when needed -->
+    <div id="popup">
+        <div>
+            <p id="popupText"></p>
+        </div>
+    </div>
+
+    <script src="client.js"></script>
+</body>
+</html>
